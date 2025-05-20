@@ -1,0 +1,41 @@
+﻿<!--для билда-->
+<!--        dotnet publish -c Release-->
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+
+        <!-- Self-contained single-file publishing -->
+        <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+        <SelfContained>true</SelfContained>
+        <PublishSingleFile>true</PublishSingleFile>
+        <!-- Отключаем агрессивное отсечение, чтобы избежать проблем с рефлексией -->
+        <PublishTrimmed>false</PublishTrimmed>
+        <!-- Сжать единый файл для уменьшения размера (опционально) -->
+        <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    </ItemGroup>
+
+</Project>
+
+<!--для отладки-->
+<!--<Project Sdk="Microsoft.NET.Sdk">-->
+
+<!--<PropertyGroup>-->
+<!--    <OutputType>Exe</OutputType>-->
+<!--    <TargetFramework>net8.0</TargetFramework>-->
+<!--    <ImplicitUsings>enable</ImplicitUsings>-->
+<!--    <Nullable>enable</Nullable>-->
+<!--</PropertyGroup>-->
+
+<!--<ItemGroup>-->
+<!--    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />-->
+<!--</ItemGroup>-->
+
+<!--</Project>-->
