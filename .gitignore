@@ -1,0 +1,8 @@
+# игнорируем всё в bin/ и obj/
+bin/
+obj/
+.idea/
+
+# но не игнорируем нашу папку releases с exe
+!dist/
+!dist/*.exe
