@@ -16,6 +16,9 @@
         <PublishTrimmed>false</PublishTrimmed>
         <!-- Сжать единый файл для уменьшения размера (опционально) -->
         <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+        <!-- Добавляем иконку -->
+        <ApplicationIcon>app.ico</ApplicationIcon>
+        <Win32Icon>app.ico</Win32Icon>
     </PropertyGroup>
 
     <ItemGroup>
